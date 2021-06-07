@@ -12,3 +12,12 @@
 Add Users</button>
 <!-- <div [innerText]="allowNewUser"> </div> -->
 <div> {{ userCreatedStatus }} </div>
+
+
+<div class="my-2">
+    <label> User Name </label>
+    <input type="text" class="form-control" (input)="onUpdateUser($event)">
+</div>
+<div>
+    {{ userName }}
+</div>

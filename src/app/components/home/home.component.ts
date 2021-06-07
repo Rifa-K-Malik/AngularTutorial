@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   userStatus: string = 'Online';
   allowNewUser = false;
   userCreatedStatus = 'No User is Created';
+  userName = "";
 
   getUserStatus() {
     return this.userStatus;
@@ -22,6 +23,10 @@ export class HomeComponent implements OnInit {
 
    changeUserCreatedStatus() {
      this.userCreatedStatus = 'User is Created';
+   }
+
+   onUpdateUser(event: Event) {
+   this.userName = (event.target as HTMLInputElement).value;
    }
 
   ngOnInit(): void {
