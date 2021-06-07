@@ -1,1 +1,14 @@
-<p>home works!</p>
+<!-- <div>
+    User with ID {{ userId }} is {{ userStatus }}
+</div> -->
+<div>
+   {{ "User" }} with ID {{ userId }} is {{ getUserStatus() }}
+</div>
+
+<button class="btn btn-primary" 
+[disabled] = "!allowNewUser"
+(click)="changeUserCreatedStatus()"
+>
+Add Users</button>
+<!-- <div [innerText]="allowNewUser"> </div> -->
+<div> {{ userCreatedStatus }} </div>
