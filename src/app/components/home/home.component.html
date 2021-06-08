@@ -16,7 +16,8 @@ Add Users</button>
 
 <div class="my-2">
     <label> User Name </label>
-    <input type="text" class="form-control" (input)="onUpdateUser($event)">
+    <!-- <input type="text" class="form-control" (input)="onUpdateUser($event)"> -->
+    <input type="text" class="form-control" [(ngModel)]="userName">
 </div>
 <div>
     {{ userName }}
