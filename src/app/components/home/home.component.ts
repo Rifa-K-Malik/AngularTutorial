@@ -10,7 +10,8 @@ export class HomeComponent implements OnInit {
   userStatus: string = 'Online';
   allowNewUser = false;
   userCreatedStatus = 'No User is Created';
-  userName = "";
+  userName = "Rifa K Malik";
+  isUserCreated = false;
 
   getUserStatus() {
     return this.userStatus;
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
    }
 
    changeUserCreatedStatus() {
+     this.isUserCreated = true;
      this.userCreatedStatus = 'User is Created';
    }
 

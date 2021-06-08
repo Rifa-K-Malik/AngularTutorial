@@ -11,7 +11,13 @@
 >
 Add Users</button>
 <!-- <div [innerText]="allowNewUser"> </div> -->
-<div> {{ userCreatedStatus }} </div>
+<!-- <div> {{ userCreatedStatus }} </div> -->
+<div *ngIf="isUserCreated, else noUser">User is Created and the username is {{ userName }} </div>
+<ng-template #noUser>
+    <div>
+        No user is Created
+    </div>
+</ng-template>
 
 
 <div class="my-2">
